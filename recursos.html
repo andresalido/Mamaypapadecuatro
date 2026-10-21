@@ -1,0 +1,194 @@
+<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Recursos gratis | Mamá y Papá de Cuatro</title><meta name="description" content="Somos mamá y papá de cuatro. Rutinas, límites con cariño, quehaceres y dinero en familia."><style>
+@font-face{font-family:Poppins;src:url(fonts/Poppins-Medium.ttf);font-weight:400 500;font-display:swap}
+@font-face{font-family:Poppins;src:url(fonts/Poppins-Bold.ttf);font-weight:600 800;font-display:swap}
+@font-face{font-family:Carlito;src:url(fonts/Carlito-Regular.ttf);font-weight:400;font-display:swap}
+@font-face{font-family:Carlito;src:url(fonts/Carlito-Bold.ttf);font-weight:700;font-display:swap}
+
+:root{--ink:#151515;--cream:#FFF6E3;--yel:#FFC83D;--blue:#2B4F94;--coral:#FF6B4A;--coral-d:#B93A1E;--mint:#BFE6D3;--sub:#3d3a35;--ease:cubic-bezier(.16,1,.3,1);--pad:clamp(20px,4.5vw,64px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Carlito,sans-serif;font-size:clamp(19px,1.5vw,22px);color:var(--ink);background:var(--cream);line-height:1.4}
+h1,h2,h3,.btn,.nav a{font-family:Poppins,sans-serif}
+::selection{background:var(--yel);color:var(--ink)}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:8px}
+html{scrollbar-color:var(--ink) var(--cream)}
+.wrap{max-width:1312px;margin:0 auto;padding-inline:var(--pad)}
+
+/* nav */
+.nav{display:flex;align-items:center;justify-content:space-between;padding-block:20px;gap:20px}
+.logos{display:flex;gap:12px;align-items:center}.logos img{height:46px;width:auto}
+.nav ul{display:flex;gap:32px;list-style:none;padding:0;font-weight:500;font-size:16px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:#fff;padding:15px 28px;border-radius:40px;font-weight:600;font-size:16px;border:3px solid var(--ink);cursor:pointer;transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--ink)}
+.btn.y{background:var(--yel);color:var(--ink)}
+.btn.w{background:#fff;color:var(--ink)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:center;padding-block:28px 84px}
+.hero h1{font-size:clamp(40px,5.2vw,72px);line-height:1.03;font-weight:800;letter-spacing:-.03em;text-wrap:balance;margin-bottom:26px}
+.hero h1 em{font-style:normal;background:linear-gradient(transparent 64%,var(--yel) 64%);padding-inline:.06em}
+.hero p{font-size:clamp(21px,1.9vw,27px);line-height:1.35;max-width:34ch;color:var(--sub)}
+.hero .cta{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap}
+.ph{position:relative;aspect-ratio:1/1.12;max-width:560px;justify-self:end;width:100%}
+.blob{position:absolute;inset:6% -4% 0 6%;background:var(--yel);border-radius:46% 54% 42% 58%/40% 46% 54% 60%}
+.ph img{position:absolute;right:6%;top:0;height:96%;width:auto;border-radius:34px;box-shadow:0 28px 60px -12px rgba(21,21,21,.35),0 8px 20px -8px rgba(21,21,21,.25);transform:rotate(2.2deg);animation:settle 1s var(--ease) both}
+@keyframes settle{from{transform:rotate(9deg) translateY(28px);opacity:0}to{transform:rotate(2.2deg);opacity:1}}
+.sticker{position:absolute;left:-3%;bottom:9%;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:12px 20px;font-family:Poppins;font-weight:800;font-size:clamp(17px,1.5vw,21px);line-height:1.15;transform:rotate(-5deg);box-shadow:6px 6px 0 var(--ink)}
+.sticker small{display:block;font-weight:500;font-size:14px;margin-top:3px}
+
+/* band */
+.band{background:var(--ink);color:#fff}
+.band .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px 40px;flex-wrap:wrap;padding-block:34px}
+.band p{font-family:Poppins;font-weight:700;font-size:clamp(22px,2.6vw,34px);line-height:1.2;letter-spacing:-.02em;max-width:30ch;text-wrap:balance}
+.band p b{color:var(--yel)}
+.band .soc{display:flex;gap:12px;flex-wrap:wrap}
+.band .soc a{border:2px solid #fff;border-radius:40px;padding:11px 20px;font-family:Poppins;font-weight:600;font-size:16px;transition:background .2s,color .2s}
+.band .soc a:hover{background:var(--yel);color:var(--ink);border-color:var(--yel)}
+
+section{padding-block:clamp(60px,8vw,104px)}
+h2{font-size:clamp(32px,4vw,52px);font-weight:800;letter-spacing:-.03em;line-height:1.12;text-wrap:balance}
+.lead{font-size:clamp(20px,1.7vw,24px);color:var(--sub);max-width:54ch;line-height:1.4}
+
+/* story */
+.story{background:#fff}
+.story .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,88px);align-items:start}
+.story h2{margin-bottom:22px}
+.story .lead+.lead{margin-top:16px;font-size:clamp(19px,1.5vw,22px)}
+.pull{font-family:Poppins;font-weight:700;font-size:clamp(26px,3vw,40px);line-height:1.18;letter-spacing:-.02em;text-wrap:balance;padding-top:8px}
+.pull span{background:var(--mint);padding-inline:.12em}
+.pull small{display:block;font-family:Carlito;font-weight:400;font-size:20px;color:var(--sub);margin-top:18px;letter-spacing:0}
+
+/* free */
+.free{background:var(--blue);color:#fff}
+.free .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,6vw,88px);align-items:center}
+.free h2{margin-bottom:18px}.free .lead{color:#E3EBFB}
+.book{position:relative;width:min(330px,80%);aspect-ratio:3/4;margin:0 auto;background:var(--yel);color:var(--ink);border:3px solid var(--ink);border-radius:6px 16px 16px 6px;box-shadow:12px 12px 0 var(--ink);padding:28px 26px 26px 38px;display:flex;flex-direction:column;justify-content:space-between;transform:rotate(-4deg)}
+.book:before{content:"";position:absolute;left:0;top:0;bottom:0;width:16px;background:var(--ink);opacity:.9;border-radius:3px 0 0 3px}
+.book h3{font-size:clamp(28px,2.8vw,38px);line-height:1.04;font-weight:800;letter-spacing:-.02em}
+.book .t{font-family:Poppins;font-weight:600;font-size:14px;letter-spacing:.04em}
+.book .age{display:inline-block;background:var(--ink);color:var(--yel);border-radius:30px;padding:7px 16px;font-family:Poppins;font-weight:600;font-size:15px;align-self:flex-start}
+form{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+input[type=email]{flex:1 1 260px;min-width:0;max-width:380px;border:3px solid var(--ink);border-radius:40px;padding:15px 24px;font:inherit;font-size:19px;color:var(--ink);background:#fff}
+input::placeholder{color:#5f5f5f}
+.steps{list-style:none;padding:0;counter-reset:n;display:grid;gap:12px;margin-top:6px}
+.steps li{counter-increment:n;position:relative;background:#fff;color:var(--ink);border:3px solid var(--ink);border-radius:18px;padding:14px 16px 14px 62px;font-size:18px;line-height:1.3}
+.steps li:before{content:counter(n);position:absolute;left:14px;top:12px;width:34px;height:34px;border-radius:50%;background:var(--yel);border:2px solid var(--ink);font:800 16px Poppins;display:grid;place-items:center}
+.steps b{font-family:Poppins;font-weight:700;font-size:16px}
+.from{display:inline-block;background:var(--cream);border:2px dashed var(--ink);border-radius:10px;padding:0 8px;font:600 14px Poppins;word-break:break-all}
+.fine{margin-top:14px;font-size:17px;color:#D3DEF7}
+
+/* guides + topics, one section */
+.pick{background:var(--mint)}
+.pick .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,5vw,72px);align-items:start}
+.intro{background:var(--ink);color:#fff;border-radius:28px;padding:clamp(28px,3.4vw,48px);position:sticky;top:24px;min-height:400px;overflow:hidden}
+.intro:after{content:"4";position:absolute;right:-.06em;bottom:-.28em;font-family:Poppins;font-weight:800;font-size:clamp(220px,24vw,340px);line-height:1;color:var(--yel);opacity:.95}
+.intro h2{position:relative;z-index:1;margin-bottom:16px;max-width:9ch}
+.intro p{position:relative;z-index:1;color:#EAE6DC;max-width:24ch;font-size:clamp(19px,1.6vw,22px)}
+.acc details{border-top:2.5px solid var(--ink)}
+.acc details:last-child{border-bottom:2.5px solid var(--ink)}
+.acc summary{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-block:22px;cursor:pointer;list-style:none;font-family:Poppins;font-weight:700;font-size:clamp(20px,2.3vw,30px);letter-spacing:-.02em;line-height:1.15;transition:padding .3s var(--ease),background .2s}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary:after{content:"+";font-size:34px;font-weight:600;line-height:1;flex:none;transition:transform .3s var(--ease)}
+.acc details[open] summary:after{transform:rotate(45deg)}
+.acc summary:hover{padding-inline:16px;background:var(--yel)}
+.acc .pn{padding:2px 0 30px;max-width:46ch}
+.acc .pn h3{font-size:clamp(22px,2vw,28px);letter-spacing:-.02em;line-height:1.1;margin-bottom:8px}
+.acc .pn p{color:var(--sub);margin-bottom:18px;line-height:1.35}
+
+/* brands */
+.brands{background:#fff;text-align:center}
+.brands h2{font-size:clamp(26px,3vw,38px);margin-bottom:26px}
+.brands .r{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 38px;font-family:Poppins;font-weight:600;font-size:clamp(18px,1.6vw,22px);color:#55524c}
+
+/* footer */
+footer{background:var(--ink);color:#fff;padding-block:48px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
+footer img{height:56px;width:auto}
+footer .l{display:flex;gap:14px}
+footer .r{font-size:17px;color:#DAD6CC;text-align:right;line-height:1.55}
+
+.com{background:var(--cream)}
+.com .wrap{text-align:center}
+.cph{position:relative;max-width:420px;height:440px;margin:0 auto 30px}
+.cb{position:absolute;inset:26px 4% 0;background:var(--yel);border-radius:44% 56% 50% 50%/50% 46% 54% 50%}
+.cph img{position:absolute;left:50%;top:0;width:min(330px,80%);height:420px;object-fit:cover;object-position:50% 8%;border-radius:28px;border:3px solid var(--ink);box-shadow:8px 8px 0 var(--ink);transform:translateX(-50%) rotate(-2deg)}
+.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:30px;text-align:left}
+.cc{background:#fff;border:3px solid var(--ink);border-radius:26px;padding:18px;box-shadow:6px 6px 0 var(--ink)}
+.ch{height:62px;display:flex;align-items:center;justify-content:center;gap:12px;border-radius:16px;padding:8px;margin-bottom:14px}
+.ch img{max-height:44px;max-width:46%;width:auto}.ch:not(.hj) img{max-width:70%}
+.hp{background:var(--yel)}.hm{background:var(--coral)}.hj{background:var(--blue)}
+.cp{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ct{text-align:center;background:var(--cream);border-radius:16px;padding:16px 4px 14px}
+.ct svg{width:48px;height:48px;display:block;margin:0 auto 8px}
+.ct b{display:block;font-family:Poppins;font-weight:800;font-size:24px;line-height:1}
+.ct span{display:block;font-family:Poppins;font-weight:600;font-size:13px;margin-top:6px}
+.fine2{margin-top:22px;font-size:16px;opacity:.6}
+
+@media (max-width:900px){
+ .nav ul li:not(:last-child){display:none}
+ main{display:flex;flex-direction:column}
+ .hero{order:0;width:100%;grid-template-columns:1fr;gap:28px;padding-block:12px 44px}
+ .story{order:1}.com{order:2}.free{order:3}.pick{order:4}.brands{order:5}
+ section{padding-block:48px}
+ .hero h1{font-size:clamp(34px,9.4vw,46px);margin-bottom:18px}
+ .hero p{font-size:20px}
+ .hero .cta{margin-top:24px}
+ .hero .cta .y{order:-1;flex:1 1 100%;justify-content:center}
+ .ph{justify-self:center;max-width:320px}
+ .band .wrap{padding-block:26px}
+ .story .wrap,.free .wrap,.pick .wrap{grid-template-columns:minmax(0,1fr)}
+ .free .book{width:min(210px,58%);margin-bottom:8px;box-shadow:8px 8px 0 var(--ink)}
+ .intro{position:relative;top:auto;min-height:0;padding-bottom:96px}
+ .intro:after{font-size:170px}
+ footer{padding-bottom:104px}
+ footer .r{text-align:left}
+}
+@media (max-width:480px){.logos img{height:34px}.nav .btn{padding:12px 18px;font-size:14px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
+</style></head><body>
+<header class="wrap nav">
+ <a class="logos" href="./" aria-label="Mamá y Papá de Cuatro, inicio"><img src="assets/mam4_s.png" alt="MAM4 de"><img src="assets/pap4_negro_s.png" alt="PAP4 de"></a>
+ <nav><ul><li><a href="./">Inicio</a></li><li><a class="btn y" href="recursos.html">Guías gratis</a></li></ul></nav>
+</header>
+<main>
+<section style="padding-block:40px 24px"><div class="wrap"><h1 style="font-size:clamp(34px,5vw,56px);line-height:1.05;font-weight:800;letter-spacing:-.02em">Guías y recursos <span style="background:linear-gradient(transparent 62%,var(--yel) 62%)">gratis</span></h1><p class="lead" style="margin-top:14px;max-width:46ch">Lo que nos funciona en casa, ordenado para que lo descargues y lo uses hoy.</p></div></section>
+<section class="free" id="regalo"><div class="wrap">
+ <div class="book" role="img" aria-label="Portada del Balance Financiero del Hogar"><span class="t">GUÍA GRATIS</span><h3>Balance Financiero del Hogar</h3><span class="age">Hoja lista para llenar</span></div>
+ <div>
+  <div id="pedir">
+  <h2>Descarga tu Balance Financiero del hogar.</h2>
+  <p class="lead">Una hoja sencilla para ver cuánto entra, cuánto sale y en qué se va el dinero de la familia. Se abre en Excel o Numbers.</p>
+  <form id="fr" action="https://app.kit.com/forms/10053106/subscriptions" method="post"><input type="email" name="email_address" required placeholder="Tu correo" aria-label="Tu correo"><button class="btn y" type="submit">¡Lo quiero!</button></form>
+  <p class="fine">Te escribimos poco y con cariño. Te sales cuando quieras.</p>
+  </div>
+  <div id="listo" hidden>
+  <h2>¡Listo! Revisa tu correo.</h2>
+  <p class="lead">Te enviamos tu Balance. A veces los correos nuevos caen en otra carpeta, así que haz esto:</p>
+  <ol class="steps">
+   <li><b>Búscalo en tu correo.</b> Escribe <span class="from">Mamá y Papá de Cuatro</span> o <span class="from">hola@mamaypapadecuatro.com</span> en el buscador.</li>
+   <li><b>¿No está en Principal?</b> Revisa Promociones, Social o Spam.</li>
+   <li><b>Muévelo a Principal.</b> Arrástralo a Principal o márcalo como «No es spam». Así los siguientes llegan directo.</li>
+   <li><b>Agrégalo a tus contactos.</b> Guarda hola@mamaypapadecuatro.com y ya no se pierde.</li>
+  </ol>
+  <p class="fine">Si ya te llegó, respóndenos con un «listo». Nos ayuda mucho.</p>
+  </div>
+ </div>
+</div></section>
+</main>
+<footer><div class="wrap">
+ <div class="l"><img src="assets/mam4_blanco_s.png" alt="MAM4 de"><img src="assets/pap4_blanco_full_c_s.png" alt="PAP4 de"></div>
+ <div class="r">mamaypapadecuatro.com<br>Nuestros consejos son experiencia personal.<br>Para temas de salud, consulta a un profesional.</div>
+</div></footer>
+<script>
+(function(){
+ if(window.matchMedia('(min-width:901px)').matches){var f=document.querySelector('.acc details');if(f)f.open=true}
+ var fr=document.getElementById('fr');
+ if(fr)fr.addEventListener('submit',function(e){e.preventDefault();var b=fr.querySelector('button');b.disabled=true;
+  fetch(fr.action,{method:'POST',mode:'no-cors',body:new FormData(fr)}).then(function(){
+   document.getElementById('pedir').hidden=true;document.getElementById('listo').hidden=false;
+  }).catch(function(){b.disabled=false;alert('No se pudo enviar. Intenta de nuevo.')});
+ });
+})();
+</script>
+</body></html>
