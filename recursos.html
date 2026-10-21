@@ -146,6 +146,9 @@ footer .r{font-size:17px;color:#DAD6CC;text-align:right;line-height:1.55}
 }
 @media (max-width:480px){.logos img{height:34px}.nav .btn{padding:12px 18px;font-size:14px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
+.free.m{background:var(--coral)}.free.m .lead,.free.m .fine{color:#fff}.free.p{background:var(--blue)}.free.b{background:var(--cream);color:var(--ink)}.free.b .lead{color:#444}.free.b .fine{color:#555}
+.cov{width:min(330px,80%);margin:0 auto;transform:rotate(var(--r))}.cov img{width:100%;display:block;border:3px solid var(--ink);border-radius:8px;box-shadow:12px 12px 0 var(--ink)}
+@media(max-width:900px){.cov{width:min(230px,62%);margin-bottom:10px}.cov img{box-shadow:8px 8px 0 var(--ink)}}
 </style></head><body>
 <header class="wrap nav">
  <a class="logos" href="./" aria-label="Mamá y Papá de Cuatro, inicio"><img src="assets/mam4_s.png" alt="MAM4 de"><img src="assets/pap4_negro_s.png" alt="PAP4 de"></a>
@@ -153,16 +156,58 @@ footer .r{font-size:17px;color:#DAD6CC;text-align:right;line-height:1.55}
 </header>
 <main>
 <section style="padding-block:40px 24px"><div class="wrap"><h1 style="font-size:clamp(34px,5vw,56px);line-height:1.05;font-weight:800;letter-spacing:-.02em">Guías y recursos <span style="background:linear-gradient(transparent 62%,var(--yel) 62%)">gratis</span></h1><p class="lead" style="margin-top:14px;max-width:46ch">Lo que nos funciona en casa, ordenado para que lo descargues y lo uses hoy.</p></div></section>
-<section class="free" id="regalo"><div class="wrap">
- <div class="book" role="img" aria-label="Portada del Balance Financiero del Hogar"><span class="t">GUÍA GRATIS</span><h3>Balance Financiero del Hogar</h3><span class="age">Hoja lista para llenar</span></div>
+<section class="free m" id="kit-sofia"><div class="wrap">
+ <div class="cov" style="--r:-4deg"><img src="assets/portada_kit_sofia.jpg" alt="Portada del Kit de supervivencia para no explotar"></div>
  <div>
-  <div id="pedir">
-  <h2>Descarga tu Balance Financiero del hogar.</h2>
-  <p class="lead">Una hoja sencilla para ver cuánto entra, cuánto sale y en qué se va el dinero de la familia. Se abre en Excel o Numbers.</p>
-  <form id="fr" action="https://app.kit.com/forms/10053106/subscriptions" method="post"><input type="email" name="email_address" required placeholder="Tu correo" aria-label="Tu correo"><button class="btn y" type="submit">¡Lo quiero!</button></form>
+  <div class="pedir">
+  <h2>Kit de supervivencia para no explotar.</h2>
+  <p class="lead">Sí, a mí también mis hijos me vuelven loca. Una guía corta para los días en que la paciencia se acaba.</p>
+  <form class="gf" action="https://app.kit.com/forms/10079593/subscriptions" method="post"><input type="email" name="email_address" required placeholder="Tu correo" aria-label="Tu correo"><button class="btn y" type="submit">¡Lo quiero!</button></form>
   <p class="fine">Te escribimos poco y con cariño. Te sales cuando quieras.</p>
   </div>
-  <div id="listo" hidden>
+  <div class="listo" hidden>
+  <h2>¡Listo! Revisa tu correo.</h2>
+  <p class="lead">Te enviamos tu Kit. A veces los correos nuevos caen en otra carpeta, así que haz esto:</p>
+  <ol class="steps">
+   <li><b>Búscalo en tu correo.</b> Escribe <span class="from">Mamá y Papá de Cuatro</span> o <span class="from">hola@mamaypapadecuatro.com</span> en el buscador.</li>
+   <li><b>¿No está en Principal?</b> Revisa Promociones, Social o Spam.</li>
+   <li><b>Muévelo a Principal.</b> Arrástralo a Principal o márcalo como “No es spam”. Así los siguientes llegan directo.</li>
+   <li><b>Agrégalo a tus contactos.</b> Guarda hola@mamaypapadecuatro.com y ya no se pierde.</li>
+  </ol>
+  <p class="fine">Si ya te llegó, respóndenos con un “listo”. Nos ayuda mucho.</p>
+  </div>
+ </div>
+</div></section><section class="free p" id="reto-johann"><div class="wrap">
+ <div class="cov" style="--r:4deg"><img src="assets/portada_reto_johann.jpg" alt="Portada del reto 10 minutos con cada hijo"></div>
+ <div>
+  <div class="pedir">
+  <h2>10 minutos con cada hijo.</h2>
+  <p class="lead">El reto del papá presente: 14 días, con calendario para pegar en el refri y una idea para cada edad.</p>
+  <form class="gf" action="https://app.kit.com/forms/10079632/subscriptions" method="post"><input type="email" name="email_address" required placeholder="Tu correo" aria-label="Tu correo"><button class="btn y" type="submit">¡Lo quiero!</button></form>
+  <p class="fine">Te escribimos poco y con cariño. Te sales cuando quieras.</p>
+  </div>
+  <div class="listo" hidden>
+  <h2>¡Listo! Revisa tu correo.</h2>
+  <p class="lead">Te enviamos tu reto. A veces los correos nuevos caen en otra carpeta, así que haz esto:</p>
+  <ol class="steps">
+   <li><b>Búscalo en tu correo.</b> Escribe <span class="from">Mamá y Papá de Cuatro</span> o <span class="from">hola@mamaypapadecuatro.com</span> en el buscador.</li>
+   <li><b>¿No está en Principal?</b> Revisa Promociones, Social o Spam.</li>
+   <li><b>Muévelo a Principal.</b> Arrástralo a Principal o márcalo como “No es spam”. Así los siguientes llegan directo.</li>
+   <li><b>Agrégalo a tus contactos.</b> Guarda hola@mamaypapadecuatro.com y ya no se pierde.</li>
+  </ol>
+  <p class="fine">Si ya te llegó, respóndenos con un “listo”. Nos ayuda mucho.</p>
+  </div>
+ </div>
+</div></section><section class="free b" id="regalo"><div class="wrap">
+ <div class="book" role="img" aria-label="Portada del Balance Financiero del Hogar"><span class="t">GUÍA GRATIS</span><h3>Balance Financiero del Hogar</h3><span class="age">Hoja lista para llenar</span></div>
+ <div>
+  <div class="pedir">
+  <h2>Descarga tu Balance Financiero del hogar.</h2>
+  <p class="lead">Una hoja sencilla para ver cuánto entra, cuánto sale y en qué se va el dinero de la familia. Se abre en Excel o Numbers.</p>
+  <form class="gf" action="https://app.kit.com/forms/10053106/subscriptions" method="post"><input type="email" name="email_address" required placeholder="Tu correo" aria-label="Tu correo"><button class="btn y" type="submit">¡Lo quiero!</button></form>
+  <p class="fine">Te escribimos poco y con cariño. Te sales cuando quieras.</p>
+  </div>
+  <div class="listo" hidden>
   <h2>¡Listo! Revisa tu correo.</h2>
   <p class="lead">Te enviamos tu Balance. A veces los correos nuevos caen en otra carpeta, así que haz esto:</p>
   <ol class="steps">
@@ -183,11 +228,12 @@ footer .r{font-size:17px;color:#DAD6CC;text-align:right;line-height:1.55}
 <script>
 (function(){
  if(window.matchMedia('(min-width:901px)').matches){var f=document.querySelector('.acc details');if(f)f.open=true}
- var fr=document.getElementById('fr');
- if(fr)fr.addEventListener('submit',function(e){e.preventDefault();var b=fr.querySelector('button');b.disabled=true;
-  fetch(fr.action,{method:'POST',mode:'no-cors',body:new FormData(fr)}).then(function(){
-   document.getElementById('pedir').hidden=true;document.getElementById('listo').hidden=false;
-  }).catch(function(){b.disabled=false;alert('No se pudo enviar. Intenta de nuevo.')});
+ document.querySelectorAll('form.gf').forEach(function(fr){
+  fr.addEventListener('submit',function(e){e.preventDefault();var b=fr.querySelector('button');b.disabled=true;
+   fetch(fr.action,{method:'POST',mode:'no-cors',body:new FormData(fr)}).then(function(){
+    var box=fr.closest('.wrap');box.querySelector('.pedir').hidden=true;box.querySelector('.listo').hidden=false;
+   }).catch(function(){b.disabled=false;alert('No se pudo enviar. Intenta de nuevo.')});
+  });
  });
 })();
 </script>
