@@ -71,6 +71,11 @@ h2{font-size:clamp(32px,4vw,52px);font-weight:800;letter-spacing:-.03em;line-hei
 form{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
 input[type=email]{flex:1 1 260px;min-width:0;max-width:380px;border:3px solid var(--ink);border-radius:40px;padding:15px 24px;font:inherit;font-size:19px;color:var(--ink);background:#fff}
 input::placeholder{color:#5f5f5f}
+.steps{list-style:none;padding:0;counter-reset:n;display:grid;gap:12px;margin-top:6px}
+.steps li{counter-increment:n;position:relative;background:#fff;color:var(--ink);border:3px solid var(--ink);border-radius:18px;padding:14px 16px 14px 62px;font-size:18px;line-height:1.3}
+.steps li:before{content:counter(n);position:absolute;left:14px;top:12px;width:34px;height:34px;border-radius:50%;background:var(--yel);border:2px solid var(--ink);font:800 16px Poppins;display:grid;place-items:center}
+.steps b{font-family:Poppins;font-weight:700;font-size:16px}
+.from{display:inline-block;background:var(--cream);border:2px dashed var(--ink);border-radius:10px;padding:0 8px;font:600 14px Poppins;word-break:break-all}
 .fine{margin-top:14px;font-size:17px;color:#D3DEF7}
 
 /* guides + topics, one section */
@@ -141,9 +146,8 @@ footer .r{font-size:17px;color:#DAD6CC;text-align:right;line-height:1.55}
  <div>
   <h1>Criar a cuatro no viene con instructivo. <em>Pero sí con ideas.</em></h1>
   <p>Somos mamá y papá de cuatro. Aquí compartimos lo que nos funciona en casa: rutinas, límites con cariño, quehaceres y cómo cuidar el dinero de la familia.</p>
-  <div class="cta"><a class="btn" href="#historia">Conócenos</a><a class="btn y" href="#regalo">Descargar regalo gratis</a></div>
  </div>
- <div class="ph"><div class="blob"></div><img src="assets/portada_s.jpg" alt="Mamá y papá de cuatro abrazados, sonriendo"><div class="sticker">Sus papás de confianza<small>Cuatro hijos, cero instructivo</small></div></div>
+ <div class="ph"><div class="blob"></div><img src="assets/familia_s.jpg" alt="La familia completa: mamá, papá y sus cuatro hijos en la playa"></div>
 </div>
 
 <div class="band"><div class="wrap">
@@ -163,12 +167,25 @@ footer .r{font-size:17px;color:#DAD6CC;text-align:right;line-height:1.55}
 </div></section>
 
 <section class="free" id="regalo"><div class="wrap">
- <div class="book" role="img" aria-label="Portada del reto de la casa en equipo"><span class="t">GUÍA GRATIS</span><h3>El reto de la casa en equipo</h3><span class="age">Niños de 4 a 9 años</span></div>
+ <div class="book" role="img" aria-label="Portada del Balance Financiero del Hogar"><span class="t">GUÍA GRATIS</span><h3>Balance Financiero del Hogar</h3><span class="age">Hoja lista para llenar</span></div>
  <div>
-  <h2>Baja el reto semanal y pongan a toda la familia a ayudar.</h2>
-  <p class="lead">Misiones divertidas, tablero semanal y diplomas para tender camas, sacar la basura y mantener el patio. Sin gritos.</p>
-  <form onsubmit="return false"><input type="email" placeholder="Tu correo" aria-label="Tu correo"><button class="btn y" type="submit">¡Lo quiero!</button></form>
+  <div id="pedir">
+  <h2>Descarga tu Balance Financiero del hogar.</h2>
+  <p class="lead">Una hoja sencilla para ver cuánto entra, cuánto sale y en qué se va el dinero de la familia. Se abre en Excel o Numbers.</p>
+  <form id="fr" action="https://app.kit.com/forms/10053106/subscriptions" method="post"><input type="email" name="email_address" required placeholder="Tu correo" aria-label="Tu correo"><button class="btn y" type="submit">¡Lo quiero!</button></form>
   <p class="fine">Te escribimos poco y con cariño. Te sales cuando quieras.</p>
+  </div>
+  <div id="listo" hidden>
+  <h2>¡Listo! Revisa tu correo.</h2>
+  <p class="lead">Te enviamos tu Balance. A veces los correos nuevos caen en otra carpeta, así que haz esto:</p>
+  <ol class="steps">
+   <li><b>Búscalo en tu correo.</b> Escribe <span class="from">Mamá y Papá de Cuatro</span> o <span class="from">hola@mamaypapadecuatro.com</span> en el buscador.</li>
+   <li><b>¿No está en Principal?</b> Revisa Promociones, Social o Spam.</li>
+   <li><b>Muévelo a Principal.</b> Arrástralo a Principal o márcalo como «No es spam». Así los siguientes llegan directo.</li>
+   <li><b>Agrégalo a tus contactos.</b> Guarda hola@mamaypapadecuatro.com y ya no se pierde.</li>
+  </ol>
+  <p class="fine">Si ya te llegó, respóndenos con un «listo». Nos ayuda mucho.</p>
+  </div>
  </div>
 </div></section>
 
@@ -207,6 +224,12 @@ footer .r{font-size:17px;color:#DAD6CC;text-align:right;line-height:1.55}
   new IntersectionObserver(function(e){g=e[0].isIntersecting;upd()}).observe(gift);
  }
  if(window.matchMedia('(min-width:901px)').matches){var f=document.querySelector('.acc details');if(f)f.open=true}
+ var fr=document.getElementById('fr');
+ if(fr)fr.addEventListener('submit',function(e){e.preventDefault();var b=fr.querySelector('button');b.disabled=true;
+  fetch(fr.action,{method:'POST',mode:'no-cors',body:new FormData(fr)}).then(function(){
+   document.getElementById('pedir').hidden=true;document.getElementById('listo').hidden=false;
+  }).catch(function(){b.disabled=false;alert('No se pudo enviar. Intenta de nuevo.')});
+ });
 })();
 </script>
 </body></html>
