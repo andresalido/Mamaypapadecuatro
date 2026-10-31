@@ -54,6 +54,7 @@ h2{font-size:clamp(32px,4vw,52px);font-weight:800;letter-spacing:-.03em;line-hei
 .story{background:#fff}
 .story .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,88px);align-items:start}
 .story h2{margin-bottom:22px}
+.vcol{display:flex;flex-direction:column;gap:28px;align-items:center}.vid{width:min(100%,300px);margin:0}.vid video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:#151515;border:3px solid var(--ink);border-radius:22px;box-shadow:6px 6px 0 var(--ink)}.vid figcaption{font-size:15px;color:var(--sub);text-align:center;margin-top:12px}
 .story .lead+.lead{margin-top:16px;font-size:clamp(19px,1.5vw,22px)}
 .pull{font-family:Poppins;font-weight:700;font-size:clamp(26px,3vw,40px);line-height:1.18;letter-spacing:-.02em;text-wrap:balance;padding-top:8px}
 .pull span{background:var(--mint);padding-inline:.12em}
@@ -172,7 +173,8 @@ a.ct{display:block;color:inherit;text-decoration:none;transition:transform .15s,
   <p class="lead">Ahí nos dimos cuenta de que lo que pasa en nuestra casa le pasa a muchas familias. Empezamos a contarlo tal cual, con humor sano y sin guion. En seis meses pasamos de 300 a más de 20 mil seguidores, y hoy nos acompañan cientos de miles de familias.</p>
   <p class="lead">Seguimos igual: dos papás de cuatro, probando, equivocándonos y compartiendo lo que sí nos funciona. Estas guías son eso: lo que nos ha servido a nosotros, ordenado para que te sirva a ti.</p>
  </div>
- <p class="pull">“Nos comunicamos como cualquier <span>mamá o papá</span>. Sin tecnicismos y sin filtros.”<small>Mamá y Papá de Cuatro</small></p>
+ <div class="vcol"><figure class="vid"><video controls playsinline preload="none" poster="assets/bienvenida_poster.jpg" aria-label="Video de bienvenida de Sofía y Johann"><source src="assets/bienvenida.mp4" type="video/mp4"></video><figcaption>Un saludo de Sofía y Johann</figcaption></figure>
+ <p class="pull">“Nos comunicamos como cualquier <span>mamá o papá</span>. Sin tecnicismos y sin filtros.”<small>Mamá y Papá de Cuatro</small></p></div>
 </div></section>
 
 <section class="com" id="comunidad"><div class="wrap">
