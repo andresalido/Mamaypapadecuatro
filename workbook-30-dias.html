@@ -1,0 +1,261 @@
+<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>30 días para dejar de sobrevivir y empezar a vivir | Mamá y Papá de Cuatro</title><meta name="description" content="Workbook de 30 días, un paso por día, para pasar de vivir al día a tomar el control de tu dinero. Con ejemplos de familia y cero tarjetas nuevas."><style>
+@font-face{font-family:Poppins;src:url(fonts/Poppins-Medium.ttf);font-weight:400 500;font-display:swap}
+@font-face{font-family:Poppins;src:url(fonts/Poppins-Bold.ttf);font-weight:600 800;font-display:swap}
+@font-face{font-family:Carlito;src:url(fonts/Carlito-Regular.ttf);font-weight:400;font-display:swap}
+@font-face{font-family:Carlito;src:url(fonts/Carlito-Bold.ttf);font-weight:700;font-display:swap}
+
+:root{--ink:#151515;--cream:#FFF6E3;--yel:#FFC83D;--blue:#2B4F94;--coral:#FF6B4A;--coral-d:#B93A1E;--mint:#BFE6D3;--sub:#3d3a35;--ease:cubic-bezier(.16,1,.3,1);--pad:clamp(20px,4.5vw,64px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Carlito,sans-serif;font-size:clamp(19px,1.5vw,22px);color:var(--ink);background:var(--cream);line-height:1.4}
+h1,h2,h3,.btn,.nav a{font-family:Poppins,sans-serif}
+::selection{background:var(--yel);color:var(--ink)}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:8px}
+html{scrollbar-color:var(--ink) var(--cream)}
+.wrap{max-width:1312px;margin:0 auto;padding-inline:var(--pad)}
+
+/* nav */
+.nav{display:flex;align-items:center;justify-content:space-between;padding-block:20px;gap:20px}
+.logos{display:flex;gap:12px;align-items:center}.logos img{height:46px;width:auto}
+.nav ul{display:flex;gap:32px;list-style:none;padding:0;font-weight:500;font-size:16px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:#fff;padding:15px 28px;border-radius:40px;font-weight:600;font-size:16px;border:3px solid var(--ink);cursor:pointer;transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--ink)}
+.btn.y{background:var(--yel);color:var(--ink)}
+.btn.w{background:#fff;color:var(--ink)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:center;padding-block:28px 84px}
+.hero h1{font-size:clamp(40px,5.2vw,72px);line-height:1.03;font-weight:800;letter-spacing:-.03em;text-wrap:balance;margin-bottom:26px}
+.hero h1 em{font-style:normal;background:linear-gradient(transparent 64%,var(--yel) 64%);padding-inline:.06em}
+.hero p{font-size:clamp(21px,1.9vw,27px);line-height:1.35;max-width:34ch;color:var(--sub)}
+.hero .cta{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap}
+.ph{position:relative;aspect-ratio:1/1.12;max-width:560px;justify-self:end;width:100%}
+.blob{position:absolute;inset:6% -4% 0 6%;background:var(--yel);border-radius:46% 54% 42% 58%/40% 46% 54% 60%}
+.ph img{position:absolute;right:6%;top:0;height:96%;width:auto;border-radius:34px;box-shadow:0 28px 60px -12px rgba(21,21,21,.35),0 8px 20px -8px rgba(21,21,21,.25);transform:rotate(2.2deg);animation:settle 1s var(--ease) both}
+@keyframes settle{from{transform:rotate(9deg) translateY(28px);opacity:0}to{transform:rotate(2.2deg);opacity:1}}
+.sticker{position:absolute;left:-3%;bottom:9%;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:12px 20px;font-family:Poppins;font-weight:800;font-size:clamp(17px,1.5vw,21px);line-height:1.15;transform:rotate(-5deg);box-shadow:6px 6px 0 var(--ink)}
+.sticker small{display:block;font-weight:500;font-size:14px;margin-top:3px}
+
+/* band */
+.band{background:var(--ink);color:#fff}
+.band .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px 40px;flex-wrap:wrap;padding-block:34px}
+.band p{font-family:Poppins;font-weight:700;font-size:clamp(22px,2.6vw,34px);line-height:1.2;letter-spacing:-.02em;max-width:30ch;text-wrap:balance}
+.band p b{color:var(--yel)}
+.band .soc{display:flex;gap:12px;flex-wrap:wrap}
+.band .soc a{border:2px solid #fff;border-radius:40px;padding:11px 20px;font-family:Poppins;font-weight:600;font-size:16px;transition:background .2s,color .2s}
+.band .soc a:hover{background:var(--yel);color:var(--ink);border-color:var(--yel)}
+
+section{padding-block:clamp(60px,8vw,104px)}
+h2{font-size:clamp(32px,4vw,52px);font-weight:800;letter-spacing:-.03em;line-height:1.12;text-wrap:balance}
+.lead{font-size:clamp(20px,1.7vw,24px);color:var(--sub);max-width:54ch;line-height:1.4}
+
+/* story */
+.story{background:#fff}
+.story .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,88px);align-items:start}
+.story h2{margin-bottom:22px}
+.vcol{display:flex;flex-direction:column;gap:28px;align-items:center}.vid{width:min(100%,300px);margin:0}.vid video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:#151515;border:3px solid var(--ink);border-radius:22px;box-shadow:6px 6px 0 var(--ink)}.vid figcaption{font-size:15px;color:var(--sub);text-align:center;margin-top:12px}
+.story .lead+.lead{margin-top:16px;font-size:clamp(19px,1.5vw,22px)}
+.pull{font-family:Poppins;font-weight:700;font-size:clamp(26px,3vw,40px);line-height:1.18;letter-spacing:-.02em;text-wrap:balance;padding-top:8px}
+.pull span{background:var(--mint);padding-inline:.12em}
+.pull small{display:block;font-family:Carlito;font-weight:400;font-size:20px;color:var(--sub);margin-top:18px;letter-spacing:0}
+
+/* free */
+.free{background:var(--blue);color:#fff}
+.free .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,6vw,88px);align-items:center}
+.free h2{margin-bottom:18px}.free .lead{color:#E3EBFB}
+.book{position:relative;width:min(330px,80%);aspect-ratio:3/4;margin:0 auto;background:var(--yel);color:var(--ink);border:3px solid var(--ink);border-radius:6px 16px 16px 6px;box-shadow:12px 12px 0 var(--ink);padding:28px 26px 26px 38px;display:flex;flex-direction:column;justify-content:space-between;transform:rotate(-4deg)}
+.book:before{content:"";position:absolute;left:0;top:0;bottom:0;width:16px;background:var(--ink);opacity:.9;border-radius:3px 0 0 3px}
+.book h3{font-size:clamp(28px,2.8vw,38px);line-height:1.04;font-weight:800;letter-spacing:-.02em}
+.book .t{font-family:Poppins;font-weight:600;font-size:14px;letter-spacing:.04em}
+.book .age{display:inline-block;background:var(--ink);color:var(--yel);border-radius:30px;padding:7px 16px;font-family:Poppins;font-weight:600;font-size:15px;align-self:flex-start}
+form{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+input[type=email]{flex:1 1 260px;min-width:0;max-width:380px;border:3px solid var(--ink);border-radius:40px;padding:15px 24px;font:inherit;font-size:19px;color:var(--ink);background:#fff}
+input::placeholder{color:#5f5f5f}
+.steps{list-style:none;padding:0;counter-reset:n;display:grid;gap:12px;margin-top:6px}
+.steps li{counter-increment:n;position:relative;background:#fff;color:var(--ink);border:3px solid var(--ink);border-radius:18px;padding:14px 16px 14px 62px;font-size:18px;line-height:1.3}
+.steps li:before{content:counter(n);position:absolute;left:14px;top:12px;width:34px;height:34px;border-radius:50%;background:var(--yel);border:2px solid var(--ink);font:800 16px Poppins;display:grid;place-items:center}
+.steps b{font-family:Poppins;font-weight:700;font-size:16px}
+.from{display:inline-block;background:var(--cream);border:2px dashed var(--ink);border-radius:10px;padding:0 8px;font:600 14px Poppins;word-break:break-all}
+.fine{margin-top:14px;font-size:17px;color:#D3DEF7}
+
+/* guides + topics, one section */
+.pick{background:var(--mint)}
+.pick .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,5vw,72px);align-items:start}
+.intro{background:var(--ink);color:#fff;border-radius:28px;padding:clamp(28px,3.4vw,48px);position:sticky;top:24px;min-height:400px;overflow:hidden}
+.intro:after{content:"4";position:absolute;right:-.06em;bottom:-.28em;font-family:Poppins;font-weight:800;font-size:clamp(220px,24vw,340px);line-height:1;color:var(--yel);opacity:.95}
+.intro h2{position:relative;z-index:1;margin-bottom:16px;max-width:9ch}
+.intro p{position:relative;z-index:1;color:#EAE6DC;max-width:24ch;font-size:clamp(19px,1.6vw,22px)}
+.acc details{border-top:2.5px solid var(--ink)}
+.acc details:last-child{border-bottom:2.5px solid var(--ink)}
+.acc summary{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-block:22px;cursor:pointer;list-style:none;font-family:Poppins;font-weight:700;font-size:clamp(20px,2.3vw,30px);letter-spacing:-.02em;line-height:1.15;transition:padding .3s var(--ease),background .2s}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary:after{content:"+";font-size:34px;font-weight:600;line-height:1;flex:none;transition:transform .3s var(--ease)}
+.acc details[open] summary:after{transform:rotate(45deg)}
+.acc summary:hover{padding-inline:16px;background:var(--yel)}
+.acc .pn{padding:2px 0 30px;max-width:46ch}
+.acc .pn h3{font-size:clamp(22px,2vw,28px);letter-spacing:-.02em;line-height:1.1;margin-bottom:8px}
+.acc .pn p{color:var(--sub);margin-bottom:18px;line-height:1.35}
+.wl{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.wl input{flex:1 1 210px;min-width:0;padding:14px 18px;border:3px solid var(--ink);border-radius:40px;font:500 16px Carlito,sans-serif;background:#fff;color:var(--ink)}.wl input:focus-visible{outline:3px solid var(--blue);outline-offset:2px}.wlok{font-weight:600;color:var(--ink)!important;margin:0!important}
+
+/* brands */
+.brands{background:#fff;text-align:center}
+.brands h2{font-size:clamp(26px,3vw,38px);margin-bottom:26px}
+.brands .r{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 38px;font-family:Poppins;font-weight:600;font-size:clamp(18px,1.6vw,22px);color:#55524c}
+
+/* footer */
+footer{background:var(--ink);color:#fff;padding-block:48px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
+footer img{height:56px;width:auto}
+footer .l{display:flex;gap:14px}
+footer .r{font-size:17px;color:#DAD6CC;text-align:right;line-height:1.55}
+
+.com{background:var(--cream)}
+.com .wrap{text-align:center}
+.cph{position:relative;max-width:420px;height:440px;margin:0 auto 30px}
+.cb{position:absolute;inset:26px 4% 0;background:var(--yel);border-radius:44% 56% 50% 50%/50% 46% 54% 50%}
+.cph img{position:absolute;left:50%;top:0;width:min(330px,80%);height:420px;object-fit:cover;object-position:50% 8%;border-radius:28px;border:3px solid var(--ink);box-shadow:8px 8px 0 var(--ink);transform:translateX(-50%) rotate(-2deg)}
+.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:30px;text-align:left}
+.cc{background:#fff;border:3px solid var(--ink);border-radius:26px;padding:18px;box-shadow:6px 6px 0 var(--ink)}
+.ch{height:62px;display:flex;align-items:center;justify-content:center;gap:12px;border-radius:16px;padding:8px;margin-bottom:14px}
+.ch img{max-height:44px;max-width:46%;width:auto}.ch:not(.hj) img{max-width:70%}
+.hp{background:var(--yel)}.hm{background:var(--coral)}.hj{background:var(--blue)}
+.cp{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+a.ct{display:block;color:inherit;text-decoration:none;transition:transform .15s,box-shadow .15s}a.ct:hover,a.ct:focus-visible{transform:translateY(-2px);box-shadow:0 4px 0 var(--ink)}
+.ct{text-align:center;background:var(--cream);border-radius:16px;padding:16px 4px 14px}
+.ct svg{width:48px;height:48px;display:block;margin:0 auto 8px}
+.ct b{display:block;font-family:Poppins;font-weight:800;font-size:24px;line-height:1}
+.ct span{display:block;font-family:Poppins;font-weight:600;font-size:13px;margin-top:6px}
+.fine2{margin-top:22px;font-size:16px;opacity:.6}
+
+@media (max-width:900px){
+ .nav ul li:not(:last-child){display:none}
+ main{display:flex;flex-direction:column}
+ .hero{order:0;width:100%;grid-template-columns:1fr;gap:28px;padding-block:12px 44px}
+ .story{order:1}.com{order:2}.free{order:3}.pick{order:4}.brands{order:5}
+ section{padding-block:48px}
+ .hero h1{font-size:clamp(34px,9.4vw,46px);margin-bottom:18px}
+ .hero p{font-size:20px}
+ .hero .cta{margin-top:24px}
+ .hero .cta .y{order:-1;flex:1 1 100%;justify-content:center}
+ .ph{justify-self:center;max-width:320px}
+ .band .wrap{padding-block:26px}
+ .story .wrap,.free .wrap,.pick .wrap{grid-template-columns:minmax(0,1fr)}
+ .free .book{width:min(210px,58%);margin-bottom:8px;box-shadow:8px 8px 0 var(--ink)}
+ .intro{position:relative;top:auto;min-height:0;padding-bottom:96px}
+ .intro:after{font-size:170px}
+ footer{padding-bottom:104px}
+ footer .r{text-align:left}
+}
+@media (max-width:480px){.logos img{height:34px}.nav .btn{padding:12px 18px;font-size:14px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
+
+.sp-hero{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,4vw,64px);align-items:center;padding-block:28px 72px}
+.sp-hero h1{font-size:clamp(36px,4.6vw,64px);line-height:1.04;font-weight:800;letter-spacing:-.03em;text-wrap:balance;margin-bottom:22px}
+.sp-hero h1 em{font-style:normal;background:linear-gradient(transparent 64%,var(--yel) 64%);padding-inline:.06em}
+.sp-hero p{font-size:clamp(20px,1.8vw,26px);line-height:1.35;color:var(--sub);max-width:36ch;margin-bottom:30px}
+.sp-hero .cv img{display:block;width:100%;max-width:480px;margin-inline:auto;border:3px solid var(--ink);border-radius:26px;box-shadow:8px 8px 0 var(--ink)}
+.sp-s{padding-block:clamp(48px,6vw,88px)}
+.sp-w{background:#fff}.sp-m{background:var(--mint)}
+.sp-s h2{font-size:clamp(28px,3.4vw,46px);line-height:1.08;letter-spacing:-.025em;margin-bottom:22px;text-wrap:balance}
+.sp-s .lead{font-size:clamp(20px,1.7vw,24px);line-height:1.4;color:var(--sub);max-width:60ch}.sp-s .lead+.lead{margin-top:14px}
+.sp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:28px}
+.sp-card{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px 24px;box-shadow:5px 5px 0 var(--ink)}
+.sp-card h3{font-size:clamp(18px,1.6vw,22px);line-height:1.15;margin-bottom:8px}
+.sp-card p{font-size:clamp(18px,1.4vw,20px);color:var(--sub);line-height:1.35}
+.sp-card .n{display:inline-block;font:800 13px Poppins;letter-spacing:.1em;background:var(--yel);border:2px solid var(--ink);border-radius:30px;padding:3px 12px;margin-bottom:10px}
+.sp-list{list-style:none;padding:0;margin-top:24px;display:grid;gap:12px;max-width:62ch}
+.sp-list li{display:flex;gap:14px;align-items:flex-start;font-size:clamp(19px,1.6vw,22px);line-height:1.3}
+.sp-list li:before{content:"";flex:none;width:22px;height:22px;margin-top:3px;border:3px solid var(--ink);border-radius:7px;background:var(--yel)}
+.sp-bonus{background:var(--ink);color:#fff;border-radius:26px;padding:clamp(24px,3vw,40px)}
+.sp-bonus h3{font-size:clamp(22px,2.2vw,30px);margin-bottom:14px;color:var(--yel)}
+.sp-bonus ul{list-style:none;padding:0;display:grid;gap:10px}.sp-bonus li{font-size:clamp(19px,1.5vw,22px)}.sp-bonus b{color:var(--yel)}
+.sp-who{display:grid;grid-template-columns:.7fr 1.3fr;gap:clamp(24px,4vw,60px);align-items:center}
+.sp-who .vid{width:min(100%,280px);margin:0 auto}.sp-who video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:#151515;border:3px solid var(--ink);border-radius:22px;box-shadow:6px 6px 0 var(--ink)}
+.sp-faq details{border-top:3px solid var(--ink);padding-block:4px}.sp-faq details:last-child{border-bottom:3px solid var(--ink)}
+.sp-faq summary{cursor:pointer;list-style:none;font:700 clamp(18px,1.8vw,22px) Poppins;padding-block:18px;display:flex;justify-content:space-between;gap:16px}
+.sp-faq summary::-webkit-details-marker{display:none}.sp-faq summary:after{content:"+";font-size:30px;line-height:1}
+.sp-faq details[open] summary:after{content:"−"}.sp-faq p{padding-bottom:20px;color:var(--sub);max-width:62ch}
+.sp-end{text-align:center}.sp-end h2{margin-inline:auto;max-width:18ch}.sp-end p{margin:0 auto 26px;max-width:40ch;font-size:clamp(20px,1.7vw,24px);color:var(--sub)}
+.sp-note{font-size:16px;color:var(--sub);margin-top:14px}
+@media (max-width:900px){.sp-hero,.sp-who{grid-template-columns:1fr}.sp-grid{grid-template-columns:1fr}.sp-hero .cv{order:-1}}
+</style></head><body>
+<header class="wrap nav">
+ <a class="logos" href="./" aria-label="Mamá y Papá de Cuatro, inicio"><img src="assets/mam4_s.png" alt="MAM4 de"><img src="assets/pap4_negro_s.png" alt="PAP4 de"></a>
+ <nav><ul><li><a href="#historia">Nuestra historia</a></li><li><a href="#guias">Guías y ebooks</a></li><li><a class="btn y" href="recursos.html">Guías gratis</a></li></ul></nav>
+</header>
+<main>
+<div class="wrap sp-hero">
+ <div>
+  <h1>30 días para dejar de sobrevivir <em>y empezar a vivir</em></h1>
+  <p>De vivir al día a tomar el control de tu dinero. Un plan de 30 días, un paso por día, con ejemplos de familia y cero tarjetas nuevas.</p>
+  <a class="btn y" href="https://pay.hotmart.com/G108283562V">Quiero el workbook</a>
+  <p class="sp-note">Workbook en PDF de 50 páginas, para imprimir o usar en pantalla.</p>
+ </div>
+ <div class="cv"><img src="assets/workbook30_portada.jpg" alt="Portada del workbook 30 días para dejar de sobrevivir y empezar a vivir"></div>
+</div>
+
+<section class="sp-s sp-w"><div class="wrap">
+ <h2>¿Sientes que el dinero no te alcanza y no sabes por dónde empezar?</h2>
+ <p class="lead">Con hijos, el dinero se va de formas que nadie te avisa: la escuela, el súper, los cumpleaños, la ropa, lo que se descompone.</p>
+ <p class="lead">Este workbook es el plan que a Johann le hubiera gustado tener cuando el dinero no le alcanzaba. No es un libro para leer y guardar: son 30 días, uno por uno, con una acción concreta cada día.</p>
+ <p class="lead">No vas a resolverlo todo en una semana. Vas a mirar de frente, ordenar, atacar un poco cada día y proteger lo que logres.</p>
+</div></section>
+
+<section class="sp-s"><div class="wrap">
+ <h2>Cómo está armado</h2>
+ <div class="sp-grid">
+  <div class="sp-card"><span class="n">SEMANA 1</span><h3>Detente y mira</h3><p>Dónde estás hoy y a dónde se va tu dinero.</p></div>
+  <div class="sp-card"><span class="n">SEMANA 2</span><h3>Organiza tu ataque</h3><p>Eliges un método para pagar tus deudas.</p></div>
+  <div class="sp-card"><span class="n">SEMANA 3</span><h3>Ejecuta</h3><p>Pasos diarios, con una carta de punto medio.</p></div>
+  <div class="sp-card"><span class="n">SEMANA 4</span><h3>Sostén y protege</h3><p>Cómo mantener lo que lograste.</p></div>
+ </div>
+ <p class="lead" style="margin-top:24px">Al final mides tu progreso contra tu punto de partida y te comprometes.</p>
+</div></section>
+
+<section class="sp-s sp-m"><div class="wrap">
+ <h2>Qué incluye</h2>
+ <ul class="sp-list">
+  <li>Plan de 30 días, con una acción por día.</li>
+  <li>Medición de tu punto de partida al inicio y al final.</li>
+  <li>El método completo en una página.</li>
+  <li>Tarjeta de seguimiento imprimible.</li>
+ </ul>
+ <div class="sp-bonus" style="margin-top:32px;max-width:760px">
+  <h3>Tres bonos</h3>
+  <ul>
+   <li><b>Bono 1:</b> guion para llamar al banco, palabra por palabra.</li>
+   <li><b>Bono 2:</b> 10 gastos hormiga que toda mamá y papá reconoce.</li>
+   <li><b>Bono 3:</b> plantilla “Ataca tu próxima deuda”.</li>
+  </ul>
+ </div>
+</div></section>
+
+<section class="sp-s sp-w"><div class="wrap sp-who">
+ <figure class="vid" style="margin:0"><video controls playsinline preload="none" poster="assets/bienvenida_poster.jpg" aria-label="Video de bienvenida de Sofía y Johann"><source src="assets/bienvenida.mp4" type="video/mp4"></video></figure>
+ <div>
+  <h2>Quiénes somos</h2>
+  <p class="lead">Somos Sofía y Johann, mamá y papá de cuatro. No somos expertos: somos papás que siguen aprendiendo. Esto es lo que nos ha servido a nosotros, ordenado para que te sirva a ti.</p>
+ </div>
+</div></section>
+
+<section class="sp-s sp-faq"><div class="wrap">
+ <h2>Preguntas frecuentes</h2>
+ <details><summary>¿Para quién es?</summary><p>Para mamás y papás que quieren ordenar el dinero de la familia sin tarjetas nuevas y sin fórmulas complicadas.</p></details>
+ <details><summary>¿Qué pasa si un día no puedo?</summary><p>Anotas “hoy no se pudo” y sigues con el del día. Con 25 de 30 días ya lo lograste.</p></details>
+ <details><summary>¿En qué formato llega?</summary><p>Es un PDF de 50 páginas. Lo puedes imprimir o llenar en pantalla.</p></details>
+ <details><summary>¿Es asesoría financiera?</summary><p>No. Es una guía práctica de organización de sentido común. Si tu situación de deudas es grave (cobranza judicial, embargo o concurso mercantil), consulta a un asesor de crédito certificado o a un abogado.</p></details>
+</div></section>
+
+<section class="sp-s sp-m sp-end"><div class="wrap">
+ <h2>Empieza hoy, un día a la vez</h2>
+ <p>Un paso por día. Sin tarjetas nuevas y sin complicarte.</p>
+ <a class="btn y" href="https://pay.hotmart.com/G108283562V">Quiero el workbook</a>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+ <div class="l"><img src="assets/mam4_blanco_s.png" alt="MAM4 de"><img src="assets/pap4_blanco_full_c_s.png" alt="PAP4 de"></div>
+ <div class="r">mamaypapadecuatro.com<br>Nuestros consejos son experiencia personal.<br>Para temas de salud, consulta a un profesional.</div>
+</div></footer>
+</body></html>
