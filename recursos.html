@@ -147,6 +147,8 @@ footer .r{font-size:17px;color:#DAD6CC;text-align:right;line-height:1.55}
 }
 @media (max-width:480px){.logos img{height:34px}.nav .btn{padding:12px 18px;font-size:14px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
+.free.v .wrap{grid-template-columns:.7fr 1.1fr .7fr}.free.v .vv{width:min(100%,230px);margin:0 auto}
+@media(max-width:900px){.free.v .wrap{grid-template-columns:minmax(0,1fr)}.free.v .cov{order:1}.free.v .vv{order:2;width:min(100%,240px);margin:0 auto 10px}.free.v .wrap>div:not(.cov){order:3}}
 .free.m{background:var(--coral)}.free.m .lead,.free.m .fine{color:#fff}.free.p{background:var(--blue)}.free.b{background:var(--cream);color:var(--ink)}.free.b .lead{color:#444}.free.b .fine{color:#555}
 .cov{width:min(330px,80%);margin:0 auto;transform:rotate(var(--r))}.cov img{width:100%;display:block;border:3px solid var(--ink);border-radius:8px;box-shadow:12px 12px 0 var(--ink)}
 @media(max-width:900px){.cov{width:min(230px,62%);margin-bottom:10px}.cov img{box-shadow:8px 8px 0 var(--ink)}}
@@ -179,7 +181,7 @@ footer .r{font-size:17px;color:#DAD6CC;text-align:right;line-height:1.55}
   </div>
  </div>
 </div></section>
-<section class="free m" id="kit-sofia"><div class="wrap">
+<section class="free v m" id="kit-sofia"><div class="wrap">
  <div class="cov" style="--r:-4deg"><img src="assets/portada_kit_sofia.jpg" alt="Portada del Kit de supervivencia para no explotar"></div>
  <div>
   <div class="pedir">
@@ -190,7 +192,6 @@ footer .r{font-size:17px;color:#DAD6CC;text-align:right;line-height:1.55}
   </div>
   <div class="listo" hidden>
   <h2>¡Listo! Revisa tu correo.</h2>
-  <figure class="vid"><video controls playsinline preload="metadata" poster="assets/sofia_kit_poster.jpg" aria-label="Sofía te da las gracias por descargar el kit"><source src="assets/sofia_kit.mp4" type="video/mp4"></video></figure>
   <p class="lead">Te enviamos tu Kit. A veces los correos nuevos caen en otra carpeta, así que haz esto:</p>
   <ol class="steps">
    <li><b>Búscalo en tu correo.</b> Escribe <span class="from">Mamá y Papá de Cuatro</span> o <span class="from">hola@mamaypapadecuatro.com</span> en el buscador.</li>
@@ -201,7 +202,8 @@ footer .r{font-size:17px;color:#DAD6CC;text-align:right;line-height:1.55}
   <p class="fine">Si ya te llegó, respóndenos con un “listo”. Nos ayuda mucho.</p>
   </div>
  </div>
-</div></section><section class="free p" id="reto-johann"><div class="wrap">
+<figure class="vid vv"><video controls playsinline preload="metadata" poster="assets/sofia_kit_poster.jpg" aria-label="Sofía te da las gracias por confiar en nosotros"><source src="assets/sofia_kit.mp4" type="video/mp4"></video></figure>
+</div></section><section class="free v p" id="reto-johann"><div class="wrap">
  <div class="cov" style="--r:4deg"><img src="assets/portada_reto_johann.jpg" alt="Portada del reto 10 minutos con cada hijo"></div>
  <div>
   <div class="pedir">
@@ -212,7 +214,6 @@ footer .r{font-size:17px;color:#DAD6CC;text-align:right;line-height:1.55}
   </div>
   <div class="listo" hidden>
   <h2>¡Listo! Revisa tu correo.</h2>
-  <figure class="vid"><video controls playsinline preload="metadata" poster="assets/johann_10min_poster.jpg" aria-label="Johann te da las gracias por descargar el reto"><source src="assets/johann_10min.mp4" type="video/mp4"></video></figure>
   <p class="lead">Te enviamos tu reto. A veces los correos nuevos caen en otra carpeta, así que haz esto:</p>
   <ol class="steps">
    <li><b>Búscalo en tu correo.</b> Escribe <span class="from">Mamá y Papá de Cuatro</span> o <span class="from">hola@mamaypapadecuatro.com</span> en el buscador.</li>
@@ -223,6 +224,7 @@ footer .r{font-size:17px;color:#DAD6CC;text-align:right;line-height:1.55}
   <p class="fine">Si ya te llegó, respóndenos con un “listo”. Nos ayuda mucho.</p>
   </div>
  </div>
+<figure class="vid vv"><video controls playsinline preload="metadata" poster="assets/johann_10min_poster.jpg" aria-label="Johann te da las gracias por descargar el reto"><source src="assets/johann_10min.mp4" type="video/mp4"></video></figure>
 </div></section><section class="sp-bridge" style="background:var(--cream,#FFF6E3);padding:64px 0"><div class="wrap">
  <h2 style="font-size:clamp(28px,4vw,44px);font-weight:800;letter-spacing:-.02em;margin-bottom:10px">¿Quieres ir más a fondo?</h2>
  <p class="lead" style="max-width:56ch">Lo gratis te ayuda a empezar. Estas dos guías son el siguiente paso, con un plan completo y paso a paso.</p>
