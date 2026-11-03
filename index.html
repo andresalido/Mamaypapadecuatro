@@ -111,9 +111,22 @@ input::placeholder{color:#5f5f5f}
 .wl{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.wl input{flex:1 1 210px;min-width:0;padding:14px 18px;border:3px solid var(--ink);border-radius:40px;font:500 16px Carlito,sans-serif;background:#fff;color:var(--ink)}.wl input:focus-visible{outline:3px solid var(--blue);outline-offset:2px}.wlok{font-weight:600;color:var(--ink)!important;margin:0!important}
 
 /* brands */
-.brands{background:#fff;text-align:center}
-.brands h2{font-size:clamp(26px,3vw,38px);margin-bottom:26px}
-.brands .r{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 38px;font-family:Poppins;font-weight:600;font-size:clamp(18px,1.6vw,22px);color:#55524c}
+.brands{background:var(--cream);text-align:center}
+.brands h2{margin-bottom:12px}
+.brands .bsub{color:var(--sub);font-size:clamp(17px,1.4vw,20px);max-width:56ch;margin:0 auto 34px;text-wrap:balance}
+.bban{display:flex;align-items:center;justify-content:center;gap:clamp(14px,2vw,26px);background:var(--blue);color:#fff;border:3px solid var(--ink);border-radius:26px;box-shadow:8px 8px 0 var(--ink);padding:clamp(18px,2.4vw,28px) 28px;margin:0 8px 40px 0;text-align:left}
+.bban b{font:800 clamp(52px,7vw,92px)/.95 Poppins,sans-serif;color:var(--yel);letter-spacing:-.04em}
+.bban span{font:600 clamp(18px,1.9vw,27px)/1.2 Poppins,sans-serif}
+.bg{display:grid;grid-template-columns:1fr 1fr;gap:28px;text-align:left}
+.bc{background:#fff;border:3px solid var(--ink);border-radius:26px;padding:clamp(20px,2.2vw,28px);box-shadow:6px 6px 0 var(--ink);margin:0 6px 6px 0}
+.bc h3{font-size:clamp(20px,1.8vw,26px);font-weight:800;letter-spacing:-.02em;line-height:1.15;display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.bc h3:before{content:"";width:16px;height:16px;border-radius:50%;background:var(--coral);border:2px solid var(--ink);flex:none}
+.bc.b h3:before{background:var(--yel)}
+.bc p{color:var(--sub);font-size:clamp(16px,1.2vw,18px);line-height:1.3;margin:0 0 16px 28px}
+.bc ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:9px}
+.bc li{background:var(--cream);border:2px solid var(--ink);border-radius:40px;padding:5px 15px;font:600 clamp(14px,1.05vw,16px)/1.3 Poppins,sans-serif;color:var(--ink);transition:background .2s}
+.bc.c li:hover{background:var(--coral);color:#fff}.bc.b li:hover{background:var(--yel)}
+@media(max-width:900px){.bg{grid-template-columns:minmax(0,1fr);gap:22px}.bban{flex-direction:column;text-align:center;gap:6px;box-shadow:6px 6px 0 var(--ink);margin-bottom:30px}.bc{box-shadow:5px 5px 0 var(--ink)}.bc p{margin-left:0}}
 
 /* footer */
 footer{background:var(--ink);color:#fff;padding-block:48px}
@@ -223,7 +236,16 @@ a.ct{display:block;color:inherit;text-decoration:none;transition:transform .15s,
 
 <section class="brands"><div class="wrap">
  <h2>Marcas con las que hemos trabajado</h2>
- <div class="r"><span>Liverpool</span><span>Bimbo</span><span>Disney</span><span>Fisher-Price</span><span>McDonald's</span><span>Sony</span><span>Amazon</span><span>Mercado Libre</span><span>Clorox</span><span>Office Depot</span></div>
+ <p class="bsub">Colaboraciones reales, integradas de forma natural en la vida de una familia de 4 hijos.</p>
+ <div class="bban"><b>+150</b><span>marcas nacionales, locales<br>e internacionales</span></div>
+ <div class="bg">
+  <article class="bc c"><h3>Juguetes y entretenimiento</h3><p>Unboxings orgánicos y humor cotidiano con niños.</p><ul><li>Disney</li><li>Mattel</li><li>Fisher-Price</li><li>Ravensburger</li><li>Juguetes Goliath</li><li>La Granja de Zenón</li><li>Sony</li><li>Kids City</li></ul></article>
+  <article class="bc b"><h3>Hogar y familia</h3><p>Uso real del producto en la dinámica de la casa.</p><ul><li>Clorox</li><li>Bimbo</li><li>Scribe</li><li>Paper Mate</li><li>3M Nexcare</li><li>Brother</li><li>HP</li><li>Jabón Lirio</li><li>ILKO</li></ul></article>
+  <article class="bc c"><h3>Salud y bienestar</h3><p>Productos para el botiquín y el cuidado de la familia.</p><ul><li>Abbott</li><li>Tempra</li><li>Dramamine</li><li>Xuzal</li><li>Lombrix</li><li>Santynol</li><li>Zeiss Lentes</li></ul></article>
+  <article class="bc b"><h3>Tiendas y retail</h3><p>Campañas de temporada: regreso a clases, Día de Reyes y Navidad.</p><ul><li>Liverpool</li><li>Amazon</li><li>Mercado Libre</li><li>Walmart</li><li>Coppel</li><li>Office Depot</li><li>Soriana</li><li>Bodega Aurrerá</li><li>Jumbo</li><li>Woolworth</li><li>Valdez Baluarte</li><li>Rappi</li><li>Dportenis</li></ul></article>
+  <article class="bc c"><h3>Comida y restaurantes</h3><p>Uso real del producto en las comidas y salidas en familia.</p><ul><li>McDonald's</li><li>Carl's Jr.</li><li>Dairy Queen</li><li>IHOP</li><li>Oakberry</li><li>Abarrey</li><li>Andatti</li><li>Clemente Jacques</li><li>Helados Ricco</li><li>La Moderna</li></ul></article>
+  <article class="bc b"><h3>Autos, viajes y experiencias</h3><p>Salidas, hoteles y lanzamientos pensados para la familia.</p><ul><li>Geely</li><li>GWM</li><li>Jetour</li><li>Hotel El Cid</li><li>Amazon Live</li><li>Playland</li></ul></article>
+ </div>
 </div></section>
 </main>
 
