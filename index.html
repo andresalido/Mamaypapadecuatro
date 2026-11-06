@@ -35,6 +35,8 @@ html{scrollbar-color:var(--ink) var(--cream)}
 .btn:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--ink)}
 .btn.y{background:var(--yel);color:var(--ink)}
 .btn.w{background:#fff;color:var(--ink)}
+.btn.bl{background:var(--blue);color:#fff}
+.nav ul{gap:16px}.nav ul li:first-child{margin-right:8px}.nav ul li .btn{padding:11px 22px;font-size:15px;white-space:nowrap}
 
 /* hero */
 .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:center;padding-block:28px 84px}
@@ -157,9 +159,9 @@ a.ct{display:block;color:inherit;text-decoration:none;transition:transform .15s,
  .nav{flex-wrap:wrap;row-gap:10px}.nav nav,.nav ul{display:contents}
  .nav::after{content:"";order:2;flex-basis:100%;height:0}
  .nav ul li:first-child{display:none}
- .nav ul li:nth-child(2){order:1}
- .nav ul li:nth-child(2) a{display:inline-flex;align-items:center;background:var(--yel);color:var(--ink);padding:10px 14px;border-radius:40px;font-weight:600;font-size:13px;border:3px solid var(--ink);font-family:Poppins,sans-serif;white-space:nowrap}
- .nav ul li:last-child{order:3;margin-left:auto}
+ .nav ul li:nth-child(2){order:3;flex:1 1 100%}
+ .nav ul li:nth-child(2) .btn{display:flex;width:100%;justify-content:center;padding:13px 16px;font-size:15px;white-space:normal;text-align:center}
+ .nav ul li:last-child{order:1;margin-left:auto}
  .nav ul li:last-child .btn{padding:8px 16px;font-size:13px}
  main{display:flex;flex-direction:column}
  .hero{order:0;width:100%;grid-template-columns:1fr;gap:28px;padding-block:12px 44px}
@@ -184,7 +186,7 @@ a.ct{display:block;color:inherit;text-decoration:none;transition:transform .15s,
 
 <header class="wrap nav">
  <a class="logos" href="./" aria-label="Mamá y Papá de Cuatro, inicio"><img src="assets/mam4_s.png" alt="MAM4 de"><img src="assets/pap4_negro_s.png" alt="PAP4 de"></a>
- <nav><ul><li><a href="#historia">Nuestra historia</a></li><li><a href="#guias">Guías y ebooks</a></li><li><a class="btn y" href="recursos.html">Guías gratis</a></li></ul></nav>
+ <nav><ul><li><a href="#historia">Nuestra historia</a></li><li><a class="btn bl nbp" href="#guias">Lo que más nos ha servido</a></li><li><a class="btn y" href="recursos.html">Guías gratis</a></li></ul></nav>
 </header>
 
 <main>
