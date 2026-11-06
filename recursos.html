@@ -164,13 +164,40 @@ footer .r{font-size:17px;color:#DAD6CC;text-align:right;line-height:1.55}
 .free.m{background:var(--coral)}.free.m .lead,.free.m .fine{color:#fff}.free.p{background:var(--blue)}.free.b{background:var(--cream);color:var(--ink)}.free.b .lead{color:#444}.free.b .fine{color:#555}
 .cov{width:min(330px,80%);margin:0 auto;transform:rotate(var(--r))}.cov img{width:100%;display:block;border:3px solid var(--ink);border-radius:8px;box-shadow:12px 12px 0 var(--ink)}
 @media(max-width:900px){.cov{width:min(230px,62%);margin-bottom:10px}.cov img{box-shadow:8px 8px 0 var(--ink)}}
+
+/* hero recursos */
+.rh{padding-block:40px 28px}
+.rh-g{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(18px,3vw,48px);align-items:center}
+.rh h1{font-size:clamp(34px,5vw,56px);line-height:1.05;font-weight:800;letter-spacing:-.02em}
+.rh .lead{margin-top:14px;max-width:46ch}
+.rh-c{display:flex;flex-direction:column;align-items:center;gap:6px}
+.rh-covs{display:flex;justify-content:center;align-items:center}
+.rh-covs a{display:block;width:clamp(120px,14vw,190px);transition:transform .25s var(--ease)}
+.rh-covs img{width:100%;display:block;border:3px solid var(--ink);border-radius:8px;box-shadow:6px 6px 0 var(--ink)}
+.rh-a1{transform:rotate(-5deg);position:relative;z-index:1}
+.rh-a2{transform:rotate(4deg);margin-left:-16px}
+.rh-covs a:hover{transform:translateY(-4px) rotate(0)}
+.rh-arrow{display:flex;flex-direction:column;align-items:center;gap:2px;text-decoration:none;color:var(--ink);font:700 15px Poppins,sans-serif;margin-top:8px}
+.rh-arrow svg{animation:rhb 1.6s ease-in-out infinite}
+@keyframes rhb{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+@media(prefers-reduced-motion:reduce){.rh-arrow svg{animation:none}}
+@media(max-width:900px){.rh{padding-block:12px 20px}.rh-g{grid-template-columns:minmax(0,1fr);gap:22px}.rh-covs a{width:min(38vw,170px)}}
 </style></head><body>
 <header class="wrap nav">
  <a class="logos" href="./" aria-label="Mamá y Papá de Cuatro, inicio"><img src="assets/mam4_s.png" alt="MAM4 de"><img src="assets/pap4_negro_s.png" alt="PAP4 de"></a>
  <nav><ul><li><a href="./">Inicio</a></li><li><a class="btn y" href="recursos.html">Guías gratis</a></li></ul></nav>
 </header>
 <main>
-<section style="padding-block:40px 24px"><div class="wrap"><h1 style="font-size:clamp(34px,5vw,56px);line-height:1.05;font-weight:800;letter-spacing:-.02em">Guías y recursos <span style="background:linear-gradient(transparent 62%,var(--yel) 62%)">gratis</span></h1><p class="lead" style="margin-top:14px;max-width:46ch">Lo que nos funciona en casa, ordenado para que lo descargues y lo uses hoy.</p></div></section>
+<section class="rh"><div class="wrap rh-g">
+ <div class="rh-t"><h1>Guías y recursos <span style="background:linear-gradient(transparent 62%,var(--yel) 62%)">gratis</span></h1><p class="lead">Lo que nos funciona en casa, ordenado para que lo descargues y lo uses hoy.</p></div>
+ <div class="rh-c">
+  <div class="rh-covs">
+   <a href="#kit-sofia" class="rh-a1" aria-label="Ir al Kit de supervivencia para no explotar"><img src="assets/portada_kit_sofia.jpg" alt="Portada del Kit de supervivencia para no explotar"></a>
+   <a href="#reto-johann" class="rh-a2" aria-label="Ir al reto 10 minutos con cada hijo"><img src="assets/portada_reto_johann.jpg" alt="Portada del reto 10 minutos con cada hijo"></a>
+  </div>
+  <a href="#regalo" class="rh-arrow"><span>Todas gratis, aquí abajo</span><svg viewBox="0 0 60 80" width="46" height="62" aria-hidden="true"><path d="M30 4 C 12 26, 48 40, 30 66" fill="none" stroke="#151515" stroke-width="5" stroke-linecap="round"/><path d="M14 54 L30 70 L46 54" fill="none" stroke="#151515" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+ </div>
+</div></section>
 <section class="free b" id="regalo"><div class="wrap">
  <div class="book" role="img" aria-label="Portada del Balance Financiero del Hogar"><span class="t">GUÍA GRATIS</span><h3>Balance Financiero del Hogar</h3><span class="age">Hoja lista para llenar</span></div>
  <div>
