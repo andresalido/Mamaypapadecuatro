@@ -156,13 +156,13 @@ a.ct{display:block;color:inherit;text-decoration:none;transition:transform .15s,
 .fine2{margin-top:22px;font-size:16px;opacity:.6}
 
 @media (max-width:900px){
- .nav{flex-wrap:wrap;row-gap:10px}.nav nav,.nav ul{display:contents}
+ .nav{flex-wrap:wrap;row-gap:10px;column-gap:10px}.nav nav,.nav ul{display:contents}
  .nav::after{content:"";order:2;flex-basis:100%;height:0}
  .nav ul li:first-child{display:none}
- .nav ul li:nth-child(2){order:3;flex:1 1 100%}
- .nav ul li:nth-child(2) .btn{display:flex;width:100%;justify-content:center;padding:13px 16px;font-size:15px;white-space:normal;text-align:center}
- .nav ul li:last-child{order:1;margin-left:auto}
- .nav ul li:last-child .btn{padding:8px 16px;font-size:13px}
+.nav ul li:nth-child(2){order:1;margin-left:auto;text-align:center}
+.nav ul li:nth-child(2) .btn{display:flex;justify-content:center;padding:10px 14px;font-size:13px;white-space:normal;text-align:center;line-height:1.15;max-width:136px}
+.nav ul li:last-child{order:3;flex:0 0 auto;margin-left:auto}
+.nav ul li:last-child .btn{padding:7px 14px;font-size:12px}
  main{display:flex;flex-direction:column}
  .hero{order:0;width:100%;grid-template-columns:1fr;gap:28px;padding-block:12px 44px}
  .story{order:1}.com{order:2}.free{order:3}.pick{order:4}.brands{order:5}
@@ -226,13 +226,12 @@ a.ct{display:block;color:inherit;text-decoration:none;transition:transform .15s,
 
 
 
-<section class="pick" id="guias"><div class="wrap">
- <div class="intro"><h2>Empieza por lo que te pasa</h2><p>Toca el tema que viven en tu casa y te decimos qué guía te ayuda.</p></div>
- <div class="acc">
-  <details name="temas"><summary>Pantallas y tareas</summary><div class="pn"><h3>Pantallas sí, pero con reglas.</h3><p>Guía práctica para que mamás y papás pongan el límite de pantalla sin ceder al berrinche. Incluye plan de 7 días y los ajustes paso a paso para tablet y iPad para limitar Disney+, YouTube y Netflix, así como los ajustes para limitarles los horarios.</p><a class="btn y" href="pantallas-con-reglas.html">Quiero la guía · US$7.99</a></div></details>
-  <details name="temas"><summary>Dinero y gastos de la escuela</summary><div class="pn"><h3>30 días para dejar de sobrevivir y empezar a vivir</h3><p>Un plan de 30 días, un paso por día, para pasar de vivir al día a tomar el control de tu dinero. Con ejemplos de familia, sin tarjetas de crédito nuevas y sin complicarte.</p><a class="btn y" href="workbook-30-dias.html">Quiero el workbook · US$7.99</a></div></details>
-  <details name="temas"><summary>Poner límites sin gritar</summary><div class="pn"><h3>Poner límites sin gritar</h3><p>Es de los temas que más nos piden. Todavía no sale a la venta: déjanos tu correo y te avisamos primero.</p><form class="wl" action="https://app.kit.com/forms/10053106/subscriptions" method="post"><input type="email" name="email_address" required placeholder="Tu correo" aria-label="Tu correo"><button class="btn y" type="submit">Avísame cuando salga</button></form><p class="wlok" hidden>¡Listo! Te avisamos primero cuando salga.</p></div></details>
-  <details name="temas"><summary>La culpa de “no estoy haciendo suficiente”</summary><div class="pn"><h3>La culpa de “no estoy haciendo suficiente”</h3><p>Es de los temas que más nos piden. Todavía no sale a la venta: déjanos tu correo y te avisamos primero.</p><form class="wl" action="https://app.kit.com/forms/10053106/subscriptions" method="post"><input type="email" name="email_address" required placeholder="Tu correo" aria-label="Tu correo"><button class="btn y" type="submit">Avísame cuando salga</button></form><p class="wlok" hidden>¡Listo! Te avisamos primero cuando salga.</p></div></details>
+<section class="pick" id="guias"><div class="wrap" style="display:block">
+ <h2 style="font-size:clamp(28px,4vw,44px);font-weight:800;letter-spacing:-.02em;margin-bottom:10px">Lo que más nos ha servido</h2>
+ <p style="max-width:56ch;font-size:18px">Dos guías con plan completo, paso a paso, para empezar hoy.</p>
+ <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:28px;max-width:880px">
+  <a href="pantallas-con-reglas.html" style="display:block;border:3px solid #151515;border-radius:18px;background:#fff;padding:20px;box-shadow:6px 6px 0 #151515;text-decoration:none;color:#151515"><img src="assets/pantallas_portada.jpg" alt="Portada Pantallas sí, pero con reglas" style="width:100%;border-radius:10px;margin-bottom:14px"><b style="font-size:20px;display:block">Pantallas sí, pero con reglas</b><span style="display:block;margin:6px 0 14px">Pon el límite de la tablet sin ceder al berrinche.</span><span class="btn y">Ver la guía · US$7.99</span></a>
+  <a href="workbook-30-dias.html" style="display:block;border:3px solid #151515;border-radius:18px;background:#fff;padding:20px;box-shadow:6px 6px 0 #151515;text-decoration:none;color:#151515"><img src="assets/workbook30_portada.jpg" alt="Portada 30 días para dejar de sobrevivir y empezar a vivir" style="width:100%;border-radius:10px;margin-bottom:14px"><b style="font-size:20px;display:block">30 días para dejar de sobrevivir y empezar a vivir</b><span style="display:block;margin:6px 0 14px">Un plan de 30 días para tomar el control de tu dinero.</span><span class="btn y">Ver el workbook · US$7.99</span></a>
  </div>
 </div></section>
 
