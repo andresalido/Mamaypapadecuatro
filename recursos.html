@@ -182,10 +182,13 @@ footer .r{font-size:17px;color:#DAD6CC;text-align:right;line-height:1.55}
 @keyframes rhb{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
 @media(prefers-reduced-motion:reduce){.rh-arrow svg{animation:none}}
 @media(max-width:900px){.rh{padding-block:12px 20px}.rh-g{grid-template-columns:minmax(0,1fr);gap:22px}.rh-covs a{width:min(38vw,170px)}}
+.btn.bl{background:var(--blue);color:#fff}
+.sp-bridge{scroll-margin-top:12px}
+@media (max-width:900px){.nav .btn.bl{padding:10px 14px;font-size:13px;line-height:1.15;text-align:center;max-width:150px;white-space:normal}}
 </style></head><body>
 <header class="wrap nav">
  <a class="logos" href="./" aria-label="Mamá y Papá de Cuatro, inicio"><img src="assets/mam4_s.png" alt="MAM4 de"><img src="assets/pap4_negro_s.png" alt="PAP4 de"></a>
- <nav><ul><li><a href="./">Inicio</a></li><li><a class="btn y" href="recursos.html">Guías gratis</a></li></ul></nav>
+ <nav><ul><li><a href="./">Inicio</a></li><li><a class="btn bl" href="#ventas">Lo que más nos ha servido</a></li></ul></nav>
 </header>
 <main>
 <section class="rh"><div class="wrap rh-g">
@@ -264,7 +267,7 @@ footer .r{font-size:17px;color:#DAD6CC;text-align:right;line-height:1.55}
   </div>
  </div>
 <figure class="vid vv"><video controls playsinline preload="metadata" poster="assets/johann_10min_poster.jpg" aria-label="Johann te da las gracias por descargar el reto"><source src="assets/johann_10min.mp4" type="video/mp4"></video></figure>
-</div></section><section class="sp-bridge" style="background:var(--cream,#FFF6E3);padding:64px 0"><div class="wrap">
+</div></section><section class="sp-bridge" id="ventas" style="background:var(--cream,#FFF6E3);padding:64px 0"><div class="wrap">
  <h2 style="font-size:clamp(28px,4vw,44px);font-weight:800;letter-spacing:-.02em;margin-bottom:10px">¿Quieres ir más a fondo?</h2>
  <p class="lead" style="max-width:56ch">Lo gratis te ayuda a empezar. Estas dos guías son el siguiente paso, con un plan completo y paso a paso.</p>
  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:28px;max-width:880px">
